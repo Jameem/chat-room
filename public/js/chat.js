@@ -41,8 +41,6 @@ const autoScroll = () => {
     if (containerHeight - newMessageHeight <= scrollOffset) {
         $messages.scrollTop = $messages.scrollHeight
     }
-
-    console.log(newMessageMargin)
 }
 
 socket.on('message', (message) => {
@@ -95,7 +93,7 @@ $messageForm.addEventListener('submit', (e) => {
             return console.log(error)
         }
 
-        console.log('Message delivered!')
+
     })
 })
 
@@ -112,7 +110,7 @@ $sendLocationButton.addEventListener('click', () => {
             longitude: position.coords.longitude
         }, () => {
             $sendLocationButton.removeAttribute('disabled')
-            console.log('Location shared')
+
         })
     })
 })
