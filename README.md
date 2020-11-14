@@ -5,7 +5,7 @@ socket.io library.
 
 ## Dependencies
 
-Install these prerequisites to follow along
+Install these prerequisites to follow along,
 
 - NPM: https://nodejs.org
 
